@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="2eidWGoYy6ERr-n4GkSE5yeLcfpoU5UMnuYRo7mi-bU" />
     <title>rock-paper-scissor</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
 
     <!-- stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/index.js" defer></script>
 </head>
 <body>
-    <h1>Rock, Paper, Scissor</h1>
+    <h1>Rock - Paper - Scissor</h1>
+    <div class="available flex justify-center flex-column align-center gap-20">
+        <label for="available">Available chances</label>
+        <input id="available" type="text">
+    </div>
     <div class="container">
         <div class="rps-btns gap-20 flex justify-center wrap">
             <button onclick="play(1)"><img src="./assets/images/rock.png" alt=""></button>
@@ -40,6 +46,10 @@
                 <input type="text" id="result-computer" readonly>
                 <label for="result-computer">computer choice</label>
             </div>
+        </div>
+        <div class="reset flex justify-center align-center flex-column gap-20">
+            <span onclick="reset()"><i class="ri-refresh-line"></i></span>
+            <p>reset</p>
         </div>
     </div>
 </body>

@@ -38,11 +38,21 @@ body{
 h1{
     padding:10px 0;
     text-align: center;
+    text-transform: uppercase;
+}
+
+.available{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.available input{
+    font-weight: bold;
 }
 
 
 .container{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .rps-btns img{
@@ -69,10 +79,10 @@ button{
 
 .scores{
     font-size: 20px;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
-.scores input , .display-choices input{
+.scores input , .display-choices input, .available input{
     padding: 20px 0;
     text-align: center;
     font-size: 20px;
@@ -83,9 +93,36 @@ button{
 }
 
 .display-choices{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .display-choices input{
     background-color: rgb(46, 182, 228);
+}
+
+.reset{
+    margin-top: 50px;
+}
+
+.reset span{
+    background-color: red;
+    padding: 20px;
+    color: white;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.reset span:hover{
+    transform: translateY(-10px) scale(1.1);
+    box-shadow: 0px 0px 10px 5px gray;
+}
+.reset span:active{
+    transform: scale(0.98);
+    box-shadow: none;
+}
+
+.reset p{
+    font-weight: bold;
 }
