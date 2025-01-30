@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock-paper-scissor</title>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/index.js" defer></script>
+</head>
+<body>
+    <h1>Rock, Paper, Scissor</h1>
+    <div class="container">
+        <div class="rps-btns gap-20 flex justify-center wrap">
+            <button onclick="play(1)"><img src="./assets/images/rock.png" alt=""></button>
+            <button onclick="play(2)"><img src="./assets/images/paper.png" alt=""></button>
+            <button onclick="play(3)"><img src="./assets/images/scissor.png" alt=""></button>
+        </div>
+        <div class="scores flex justify-center gap-20 wrap">
+            <div class="user-score flex flex-column align-center gap-20">
+                <label for="user justify-center">User</label>
+                <input class="user" id="user" type="text" readonly>
+            </div>
+            <div class="computer-score flex flex-column align-center gap-20">
+                <label for="draw">Draw</label>
+                <input class="draw" id="draw" type="text" readonly>
+            </div>
+            <div class="computer-score flex flex-column align-center gap-20">
+                <label for="computer">Computer</label>
+                <input class="computer" id="computer" type="text" readonly>
+            </div>
+        </div>
+        <div class="display-choices flex justify-center wrap gap-20">
+            <div class="user flex flex-column align-center gap-20">
+                <input type="text" id="result-user" readonly>
+                <label for="result-user">Your choice</label>
+            </div>
+            <div class="computer flex flex-column align-center gap-20">
+                <input type="text" id="result-computer" readonly>
+                <label for="result-computer">computer choice</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
