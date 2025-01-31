@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: rgb(231, 235, 236);
+    background: radial-gradient(circle, rgb(204, 221, 236) 0%, rgba(0,128,255,1) 100%);
 }
 
 .gap-20{
